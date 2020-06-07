@@ -1,0 +1,134 @@
+$md-calendar-width: 20em;
+$md-calendar-mobile-width: 18.5em;
+  
+.md-datepicker-dialog {
+    border-radius: 0.12em;
+}
+
+.md-datepicker-header {
+    min-width: 9.375em;
+    padding: 1em;
+    
+    @include md-layout-xsmall {
+        padding: 1em 1.25em;
+    }
+
+    .md-datepicker-year-select {
+        font-size: 1em;
+        letter-spacing: .01em;
+        line-height: 1.5em;
+    }
+
+    .md-datepicker-date-select {
+        font-size: 2em;
+        line-height: 1.2em;
+    }
+
+}
+
+.md-datepicker-body {
+    width: $md-calendar-width;
+    
+    @include md-layout-xsmall {
+        width: $md-calendar-mobile-width;
+    }
+
+    .md-button {
+        margin: 0;
+    }
+
+}
+
+.md-datepicker-body-header {
+    padding: 0.5em;
+    
+    &:before,
+    &:after {
+        width: 3.43em;
+        height: 3.43em;
+    }
+
+}
+
+.md-datepicker-month {
+    top: 0.5em;
+    
+    @include md-layout-xsmall {
+        padding: 0 0.4em;
+    }
+    
+    .md-datepicker-month-trigger {
+        min-height: 2em;
+        margin: 0 2.875em 0.715em;
+    }
+
+}
+
+.md-datepicker-week {
+    min-height: 2em;
+    span {
+        font-size: 0.75em;
+    }
+
+}
+
+
+.md-datepicker-days {
+    $md-day-width: 100%;
+    
+    .md-datepicker-empty,
+    .md-datepicker-day {
+        margin: 0.1em 0;
+        flex: 0 1 $md-day-width / 7;
+    }
+
+    .md-datepicker-day-button {
+        $width: 1.875em;
+        width: $width;
+        min-width: $width;
+        height: $width;
+        border-radius: $width;
+        line-height: $width;
+    }
+
+}
+
+.md-datepicker-month-selector {
+    padding: 0.4em 0.5em 0.715em;
+    
+    .md-datepicker-year-trigger {
+        margin: 0 0 0.5em;
+    }
+
+}
+
+.md-datepicker-month-button,
+.md-datepicker-year-button {
+    height: 2.572em;
+    margin: 0.3em 0;
+    line-height: 2.572em;
+}
+
+.md-datepicker-month-button {
+    border-radius: 0.12em;
+    font-size: 0.93em;
+}
+
+.md-datepicker-year-selector {
+    bottom:  3.25em;
+    border-bottom-width: 0.1em;
+
+    .md-button {
+        min-height: 2.572em;
+    }
+
+}
+
+.md-datepicker-year-button {
+    font-size: 1em;
+    
+    &.md-datepicker-selected {
+        font-size: 1.5em;
+    }
+
+}

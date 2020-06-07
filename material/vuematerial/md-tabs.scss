@@ -1,0 +1,72 @@
+.md-tabs {
+    
+    &.md-alignment-fixed .md-tabs-navigation {
+      
+        .md-button {
+            max-width: 16.5em;
+            min-width: 11.43em;
+        
+            @include md-layout-small {
+                min-width: 5.143em;
+            }
+      
+        }
+    
+    }
+    
+    .md-toolbar & {
+        padding-left: 3.43em;
+        
+        @include md-layout-small {
+            margin: 0 -0.5em;
+            padding-left: 0;
+        }
+    
+    }
+  
+}
+  
+.md-tabs-navigation {
+    
+    .md-button {
+        max-width: 16.5em;
+        min-width: 5.143em;
+        height: 3.43em;
+        margin: 0;
+        border-radius: 0;
+        font-size: 0.93em;
+    }
+    
+    .md-icon-label {
+        height: 5.143em;
+      
+        .md-tab-icon + .md-tab-label {
+            margin-top: 0.715em;
+        }
+    
+    }
+    
+    .md-ripple {
+        padding: 01.5em;
+      
+        @include md-layout-small {
+            padding: 0 0.75em;
+        }
+    
+    }
+  
+}
+  
+.md-tabs-indicator {
+    height: 0.12em;
+  
+}
+  
+.md-tab {
+    padding: 1em;
+    
+    @include md-layout-small {
+        padding: 0.5em;
+    }
+  
+}

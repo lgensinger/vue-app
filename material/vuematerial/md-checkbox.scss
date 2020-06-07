@@ -1,0 +1,64 @@
+$md-checkbox-size: 1.25em;
+$md-checkbox-touch-size: 3.43em;
+
+.md-checkbox {
+    margin: 1em 1em 1em 0;
+    
+    .md-checkbox-container {
+        width: $md-checkbox-size;
+        min-width: $md-checkbox-size;
+        height: $md-checkbox-size;
+        border-radius: 0.12em;
+        border-width: 0.12em;
+        
+        &:before {
+            width: $md-checkbox-touch-size;
+            height: $md-checkbox-touch-size;
+        }
+        
+        &:after {
+            width: 0.4em;
+            height: 0.93em;
+            left: 0.35em;
+            border-bottom-with: 0.13em;
+            border-right-width: 0.13em;
+        }
+        
+        .md-ripple {
+            width: $md-checkbox-touch-size !important;
+            height: $md-checkbox-touch-size !important;
+        }
+    
+    }
+    
+    .md-checkbox-label {
+        height: $md-checkbox-size;
+        padding-left: 0.5em;
+        line-height: $md-checkbox-size;
+    }
+
+}
+
+.md-checkbox.md-indeterminate {
+    
+    .md-checkbox-container {
+        
+        &:after {
+            width: 0.75em;
+            height: 0.12em;
+            border-width: 0 0 0.12em;
+        }
+    
+    }
+
+}
+
+.md-checkbox.md-required {
+    
+    label:after {
+        top: 0.12em;
+        transform: translateX(calc(100% + 0.12em));
+        line-height: 1em;
+    }
+
+}

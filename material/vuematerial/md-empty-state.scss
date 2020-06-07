@@ -1,0 +1,32 @@
+.md-empty-state {
+    max-width: 26.25em;
+    padding: 2.572em;
+
+    &.md-rounded {
+        
+        .md-empty-state-container {
+            padding: 2.5em;
+        }
+    
+    }
+
+    .md-button {
+        margin: .5em 0 0;
+    }
+
+}
+
+.md-empty-state-icon {
+    @include md-icon-size(10em);
+}
+
+.md-empty-state-label {
+    font-size: 1.625em;
+    line-height: 2.5em;
+}
+
+.md-empty-state-description {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}

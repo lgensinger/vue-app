@@ -1,0 +1,9 @@
+.md-list-item-expand {
+    border-top-width: 0.1em;
+    border-bottom-width: 0.1em;
+    
+    .md-list-expand {
+        transform: translate3D(0, -1.5em, 0);
+    }
+  
+}

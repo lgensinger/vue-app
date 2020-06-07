@@ -1,0 +1,28 @@
+.md-table-pagination {
+    height: auto;
+    border-top-width: 0.1em;
+    font-size: 1em;
+    
+    .md-table-pagination-previous {
+        margin-right: 0em;
+        margin-left: 0em;
+    }
+    
+    .md-field {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+      
+        .md-select-value {
+            font-size: 1em;
+        }
+    
+    }
+  
+}
+  
+.md-menu-content.md-pagination-select {
+    max-width: 5.125em;
+    min-width: 4em;
+    margin-top: 0;
+}

@@ -1,0 +1,35 @@
+.md-speed-dial {
+
+    &.md-top-right,
+    &.md-top-left {
+        top: 1.5em;
+    }
+
+    &.md-bottom-right,
+    &.md-bottom-left {
+        bottom: 1.5em;
+    }
+
+    &.md-top-center {
+        top: 1.5em;
+    }
+
+    &.md-bottom-center {
+        bottom: 1.5em;
+    }
+
+    &.md-top-right,
+    &.md-bottom-right {
+        right: 1.5em;
+    }
+
+    &.md-top-left,
+    &.md-bottom-left {
+        left: 1.5em;
+    }
+
+    .md-button {
+        margin: 0.4em 0;
+    }
+
+}

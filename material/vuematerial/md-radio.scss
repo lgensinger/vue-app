@@ -1,0 +1,48 @@
+$md-radio-size: 1.3em;
+$md-radio-touch-size: 3.43em;
+  
+.md-radio {
+    margin: 0;
+    
+    .md-radio-container {
+        width: $md-radio-size;
+        min-width: $md-radio-size;
+        height: $md-radio-size;
+        border-width: 0.12em;
+      
+        &:before {
+            width: $md-radio-touch-size;
+            height: $md-radio-touch-size;
+        }
+      
+        &:after {
+            top: 0.2em;
+            right: 0.15em;
+            bottom: 0.15em;
+            left: 0.2em;
+        }
+      
+        .md-ripple {
+            width: $md-radio-touch-size !important;
+            height: $md-radio-touch-size !important;
+        }
+    
+    }
+    
+    .md-radio-label {
+        height: $md-radio-size;
+        padding-left: 1em;
+        line-height: $md-radio-size;
+    }
+  
+}
+  
+.md-radio.md-required {
+    
+    label:after {
+        top: 0.12em;
+        transform: translateX(calc(100% + 0.12em));
+        line-height: 1em;
+    }
+  
+}

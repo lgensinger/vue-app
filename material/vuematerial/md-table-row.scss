@@ -1,0 +1,11 @@
+.md-table-row {
+    
+    tbody & td {
+        border-top-width: 0em;
+    }
+    
+    td:not(:last-of-type) {
+        padding-right: 1em;
+    }
+  
+}

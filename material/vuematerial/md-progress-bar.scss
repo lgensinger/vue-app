@@ -1,0 +1,19 @@
+@keyframes md-progress-bar-buffer {
+    to {
+        transform: translate3D(-0.5em, 0, 0);
+    }
+  
+}
+  
+.md-progress-bar {
+    height: 0.45em;
+    
+    &.md-buffer {
+        
+        .md-progress-bar-buffer {
+            border-top-width: 0.25em;
+        }
+    
+    }
+  
+}

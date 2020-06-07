@@ -1,0 +1,54 @@
+.md-table-cell {
+    height: auto;
+    font-size: inherit;
+    line-height: 1;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+    vertical-align: top;
+
+    &:last-child .md-table-cell-container {
+        padding-right: 0em;
+    }
+
+}
+  
+.md-table-cell-container {
+    padding: 0;
+    
+    .md-field {
+        min-height: 0;
+        margin: 0;
+        padding: 0;
+        
+        input {
+            width: 100%;
+        }
+        
+        > .md-icon {
+            height: 1.25em;
+            margin: 0;
+            width: 1.25em;
+        }
+        
+        .md-input {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .md-input-action {
+            width: 1.25em;
+            min-width: 1.25em;
+            height: 1.25em;
+            top: 0.5em;
+            
+            .md-icon {
+                width: 1.25em;
+                min-width: 1.25em;
+                height: 1.25em;
+                font-size: 1.25em!important;
+            }
+        }
+        
+    }
+    
+}

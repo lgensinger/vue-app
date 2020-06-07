@@ -1,0 +1,124 @@
+.md-list-item {
+    
+    &.md-inset {
+      
+        .md-list-item-content {
+            padding-left: 5.143em;
+        }
+    
+    }
+  
+}
+
+.md-list-item-container {
+    font-size: 1em;
+}
+
+.md-list-item-content {
+    min-height: 1.4em;
+    padding: 0.25em 1em;
+
+    .md-list.md-dense & {
+        min-height: 1em;
+        font-size: 0.93em;
+
+        > .md-avatar {
+            
+            &:not(.md-small) {
+                width: 2.572em;
+                min-width: 2.572em;
+                height: 2.572em;
+            }
+
+            &:first-child {
+                margin-right: 1.25em;
+            }
+        
+        }
+
+    }
+    
+    .md-list.md-double-line & {
+        min-height: 5.143em;
+    }
+
+    .md-list.md-double-line.md-dense & {
+        min-height: 3.75em;
+    }
+
+    .md-list.md-triple-line & {
+        min-height: 6.286em;
+    }
+
+    .md-list.md-triple-line.md-dense & {
+        min-height: 4.75em;
+    }
+
+    .md-list-action {
+        margin: 0 -0.625em 0 0;
+
+        &:last-of-type {
+            margin: 0 -0.625em 0 1em;
+        }
+
+    }
+
+    > .md-icon:first-child {
+        margin-right: 2em;
+    }
+
+    > .md-icon:last-child {
+        margin-left: 1em;
+    }
+
+    > .md-checkbox,
+    > .md-radio {
+        margin: 0;
+        
+        &:first-child {
+            margin-right: 2.572em;
+        }
+    
+    }
+
+    > .md-switch {
+        margin: 0;
+
+        &:first-child {
+            margin-right: 1.572em;
+        }
+    
+    }
+
+    > .md-avatar {
+        margin: 0.25em 0;
+        
+        &:first-child {
+            margin-right: 1em;
+        }
+    
+    }
+
+}
+
+.md-list-item-text {
+    line-height: 1.25em;
+
+    .md-list.md-dense & {
+        font-size: 0.93em;
+    }
+
+    * {
+        line-height: 1.25em;
+    }
+
+    :nth-child(2),
+    :nth-child(3) {
+        font-size: 0.875em;
+    }
+
+    .md-list.md-dense & * {
+        font-size: 0.93em;
+    }
+
+}

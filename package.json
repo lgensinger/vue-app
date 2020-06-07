@@ -1,0 +1,31 @@
+{
+  "name": "vue-app",
+  "version": "0.0.0",
+  "description": "Vue.js web application scaffold.",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "vue-cli-service build --no-clean ./src/main.js",
+    "start": "vue serve ./src/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:lgensinger/vue-app.git"
+  },
+  "author": "lgensinger",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.6.10",
+    "vue-axios": "^2.1.0",
+    "vue-meta": "^1.5.8"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^3.5.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0"
+  }
+}

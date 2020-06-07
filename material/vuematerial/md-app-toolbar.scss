@@ -1,0 +1,20 @@
+.md-reveal,
+.md-fixed-last,
+.md-flexible,
+.md-overlap {
+.md-reveal-active {
+    transform: translate3d(0, calc(100% + 0.715em), 0);
+    }
+}
+
+.md-app-toolbar {
+    min-height: 4.572em;
+}
+
+.md-overlap {
+    
+    .md-app-toolbar {
+        height: 12.25em;
+    }
+    
+}

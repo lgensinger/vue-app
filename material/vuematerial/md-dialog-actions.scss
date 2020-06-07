@@ -1,0 +1,19 @@
+.md-dialog-actions {
+    min-height:  3.25em;
+    padding: 0.5em 0.5em 0.5em 1.5em;
+    
+    &:before {
+        height: 0.1em;
+        top: -0.1em;
+    }
+    
+    .md-button {
+        min-width: 4.572em;
+      
+        + .md-button {
+            margin-left: 0.5em;
+        }
+    
+    }
+  
+ }

@@ -1,0 +1,45 @@
+.md-snackbar {
+    min-width: 18em;
+    max-width: 35.5em;
+    min-height: 3.43em;
+    max-height: 5.72em;
+    padding: 0.875em 1.5em;
+    border-radius: 0.12em;
+
+    &.md-position-center {
+
+        &.md-snackbar-enter,
+        &.md-snackbar-leave-active {
+            transform: translate3D(0, calc(100% + 0.5em), 0);
+        }
+    
+    }
+
+    &.md-position-left {
+        bottom: 1.5em;
+        left: 1.5em;
+
+        &.md-snackbar-enter,
+        &.md-snackbar-leave-active {
+            transform: translate3D(0, calc(100% + 2em), 0);
+        }
+    
+    }
+
+}
+
+.md-snackbar-content {
+    
+    .md-button {
+        margin: -0.5em -0.5em -0.5em 2.572em;
+        @include md-layout-xsmall {
+            margin-left: 0.75em;
+        }
+
+        + .md-button {
+            margin-left: 1em;
+        }
+
+    }
+
+}

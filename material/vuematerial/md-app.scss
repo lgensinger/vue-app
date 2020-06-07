@@ -1,0 +1,31 @@
+@import "~vue-material/src/components/MdLayout/mixins";
+
+.md-app {
+    
+    &.md-overlap {
+        
+      .md-app-content {
+          margin: -4.572em 1.5em 1.5em;
+          
+          @include md-layout-small {    
+              margin: -4.572em 1em 1em;
+          }
+          @include md-layout-xsmall {
+              margin: -4.572em 0.5em 0.5em;
+          }
+        
+        }
+        
+    }
+    
+}
+
+.md-app-content {
+    padding: 1em;
+    
+    @include md-layout-small-and-up {
+        border-left-width: 0.1em;
+        border-right-width: 0.1em;
+    }
+    
+}

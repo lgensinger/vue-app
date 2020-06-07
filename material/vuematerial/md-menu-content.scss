@@ -1,0 +1,68 @@
+$md-menu-base-width: 4em;
+
+.md-menu-content {
+    min-width: $md-menu-base-width * 2;
+    max-width: $md-menu-base-width * 5;
+    max-height: 35vh;
+    border-radius: 0.12em;
+
+    &.md-menu-content-enter {
+
+        &.md-menu-content-top-start {
+            transform: translate3d(0, 0.5em, 0) scaleY(.95);
+        }
+
+        &.md-menu-content-top-end {
+            transform: translate3d(0, 0.5em, 0) scaleY(.95);
+        }
+
+        &.md-menu-content-right-start {
+            transform: translate3d(0, -0.5em, 0) scaleY(.95);
+        }
+
+        &.md-menu-content-right-end {
+            transform: translate3d(0, 0.5em, 0) scaleY(.95);
+        }
+
+        &.md-menu-content-bottom-start {
+            transform: translate3d(0, -0.5em, 0) scaleY(.95);
+        }
+
+        &.md-menu-content-bottom-end {
+            transform: translate3d(0, -0.5em, 0) scaleY(.95);
+        }
+
+        &.md-menu-content-left-start {
+            transform: translate3d(0, -0.5em, 0) scaleY(.95);
+        }
+
+        &.md-menu-content-left-end {
+            transform: translate3d(0, 0.5em, 0) scaleY(.95);
+        }
+    
+    }
+
+    &.md-menu-content-medium {
+        min-width: $md-menu-base-width * 3;
+    }
+
+    &.md-menu-content-big {
+        min-width: $md-menu-base-width * 4;
+    }
+
+    &.md-menu-content-huge {
+        min-width: $md-menu-base-width * 5;
+    }
+
+}
+
+.md-menu-content-container {
+    
+    .md-list {
+        @include md-layout-small {
+            font-size: 0.875em;
+        }
+    
+    }
+    
+}

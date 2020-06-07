@@ -1,0 +1,9 @@
+.md-steppers.md-vertical .md-stepper-content {
+    padding: 0 1.5em 0 3.75em;
+    transform: translate3D(0, -1.25em, 0);
+    
+    &.md-active {
+        padding-bottom: 2.5em;
+    }
+  
+}

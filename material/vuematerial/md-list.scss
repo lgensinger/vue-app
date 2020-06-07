@@ -1,0 +1,24 @@
+.md-list {
+    padding: 0.5em 0;
+    
+    &.md-dense {
+        padding: 0.25em 0;
+    }
+    
+    .md-divider {
+        margin-top: -0.1em;
+    }
+
+    .md-subheader {
+        
+        &.md-inset {
+            padding-left: 5.143em;
+        }
+    
+    }
+    
+    > .md-subheader:first-of-type {
+        margin-top: -0.5em;
+    }
+    
+}

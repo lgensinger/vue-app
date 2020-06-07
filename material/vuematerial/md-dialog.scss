@@ -1,0 +1,20 @@
+.md-dialog {
+    min-width: 17.5em;
+    border-radius: 0.12em;
+}
+
+.md-dialog-container {
+    
+    .md-tabs-navigation {
+        padding: 0 0.75em;
+    }
+
+    .md-tab {
+        
+        @include md-layout-xsmall {
+            padding: 0.75em;
+        }
+
+    }
+
+}

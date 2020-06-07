@@ -1,0 +1,30 @@
+.md-field.md-inline.md-autocomplete-box {
+    padding-top: 0.12em;
+    border-radius: 0.12em;
+    
+    .md-toolbar & {
+        min-height: 2.5em;
+        height: 2.5em;
+    }
+    
+    .md-input {
+        padding-left: 1em;
+    }
+    
+    .md-input-action {
+        right: 0.5em;
+    }
+    
+    &.md-focused label,
+    label {
+        margin-top: 0.12em;
+        left: 1em;
+    }
+    
+}
+
+.md-autocomplete-box-content:after {
+    border-bottom-width: 0.1em;
+    height: 0.4em;
+    top: -0.4em;
+}

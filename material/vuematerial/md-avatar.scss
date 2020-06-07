@@ -1,0 +1,38 @@
+$md-avatar-size: 2.5em;
+$md-avatar-large-size: 4.572em;
+$md-avatar-large-icon: 2.5em;
+$md-avatar-small-size:1.5em;
+$md-avatar-small-icon: 1em;
+
+.md-avatar {
+    width: $md-avatar-size;
+    min-width: $md-avatar-size;
+    height: $md-avatar-size;
+    border-radius: $md-avatar-size;
+    font-size: 1.5em;
+    letter-spacing: -.05em;
+    
+    &.md-large {
+        min-width: $md-avatar-large-size;
+        min-height: $md-avatar-large-size;
+        border-radius: $md-avatar-large-size;
+        font-size: $md-avatar-large-icon - 0.5em;
+    
+        .md-icon {
+            font-size: $md-avatar-large-icon !important;
+        }
+    }
+    
+    &.md-small {
+        width: $md-avatar-small-size;
+        min-width: $md-avatar-small-size;
+        height: $md-avatar-small-size;
+        border-radius: $md-avatar-small-size;
+        font-size: $md-avatar-small-icon - 0.12em;
+        
+        .md-icon {
+            font-size: $md-avatar-small-icon !important;
+        }
+    }
+    
+}

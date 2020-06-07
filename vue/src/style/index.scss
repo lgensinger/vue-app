@@ -1,0 +1,195 @@
+/*************************************** COLOR PALETTE ***************************************/
+
+$accent: cyan;
+$highlight: rgb(120, 104, 173);
+
+$copy-black: rgba(0,0,0,0.87);
+
+$dark-grey: rgb(31, 31, 31);
+$mid-grey: rgb(100, 100, 100);
+$light-grey: rgb(210, 210, 210);
+
+/*************************************** DEFAULTS ***************************************/
+
+$copy-gutter: 50px;
+$copy-gutter-half: 25px;
+$copy-gutter-quarter: 12.5px;
+$copy-gutter-third: calc(50px / 3 * 2);
+$copy-gutter-double: calc(#{$copy-gutter} * 2);
+
+/* media query sets */
+$mq-4k: 1920px;
+$mq-jumbo: 1350px;
+$mq-large: 1275px;
+$mq-medium: 1080px;
+$mq-small: 950px;
+$mq-tiny: 800px;
+
+/*************************************** GLOBALS ***************************************/
+
+html {
+    
+    scroll-behavior: smooth;
+    
+}
+
+html,
+body {
+    
+    background: $light-grey;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h5 {
+    
+    font-size: 1em;
+    
+}
+
+main {
+    
+    margin-bottom: $copy-gutter-double;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: $copy-gutter;
+    max-width: 1200px;
+    padding-bottom: $copy-gutter;
+    width: 70%;
+    
+}
+
+main > section {
+    
+    margin-bottom: 5em;
+    
+}
+
+figure {
+    
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*********************** MEDIA QUERIES ***********************/
+
+@media screen 
+    and (min-width: $mq-4k) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (min-resolution: 192dpi) {
+        
+        html, 
+        body {
+
+            font-size: 24px;
+
+        }
+        
+        main {
+            
+            max-width: 90%;
+            width: 90%;
+            
+        }
+
+}
+
+@media screen 
+    and (max-width: $mq-jumbo) {
+        
+        main {
+            
+            max-width: 90%;
+
+        }
+        
+}
+
+@media screen 
+    and (max-width: $mq-medium) {
+    
+        main {
+            
+            max-width: 90%;
+            width: 90%;
+
+        }
+        
+}
+
+@media screen 
+    and (max-width: $mq-tiny) {
+        
+        main {
+            
+            width: 95%;
+            
+        }
+        
+}
+
+/*************************************** HEADER ***************************************/
+
+@import "the-header";
+
+/*************************************** MESSAGES ***************************************/
+
+/* component wrap */
+.message {
+    
+    margin: auto;
+    margin-bottom: 8em;
+    margin-top: 8em;
+    max-width: 600px;
+    top: 50%;
+    width: 70%;
+    
+}
+
+/* headline */
+.message h1 {
+    
+    width: 100%;
+    
+}
+
+/* links */
+.message p:nth-of-type(2) a,
+.message p:nth-of-type(3) a {
+    
+    color: $accent;
+    
+}
+
+/*********************** MEDIA QUERIES ***********************/
+
+@media screen 
+    and (min-width: $mq-4k) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (min-resolution: 192dpi) {
+        
+        /* component wrap */
+        .message {
+            
+            max-width: 80%;
+            width: 80%;
+            
+        }
+
+}
+
+/*************************************** MESSAGES ***************************************/
+
+@import "message-configuration";
+@import "message-datastore";
+
+/*************************************** COMPONENT ***************************************/
+
+@import "base-component";
+
+/*************************************** FOOTER ***************************************/
+
+@import "the-footer";

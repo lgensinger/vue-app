@@ -1,0 +1,99 @@
+$md-toolbar-height: 4.572em;
+$md-toolbar-height-portrait: 4em;
+$md-toolbar-height-landscape: 3.43em;
+$md-toolbar-height-dense: 3.43em;
+
+.md-toolbar,
+.md-toolbar-row {
+    min-height: $md-toolbar-height;
+    
+    @include md-layout-small {
+        min-height: $md-toolbar-height-landscape;
+    }
+
+    @include md-layout-xsmall {
+        min-height: $md-toolbar-height-portrait;
+    }
+
+}
+
+.md-toolbar {
+    padding: 0 1em;
+    
+    @include md-layout-small {
+        padding: 0 0.5em;
+    }
+
+    &.md-dense {
+        min-height: $md-toolbar-height-dense;
+    }
+
+    &.md-medium,
+    &.md-large {
+
+        .md-toolbar-row {
+            min-height: $md-toolbar-height;
+        }
+    
+    }
+
+    &.md-medium {
+        min-height: 6.286em;
+    }
+
+    &.md-large {
+        min-height: 9.143em;
+
+        &.md-dense {
+            min-height: 6.86em;
+
+            .md-toolbar-row + .md-toolbar-row {
+                min-height: 2em;
+            }
+        
+        }
+    
+    }
+
+    .md-toolbar-offset {
+        margin-left: 4em;
+        
+        @include md-layout-small {
+            margin-left: 3.43em;
+        }
+    
+    }
+
+    .md-button,
+    .md-icon {
+        
+        ~ .md-title {
+            margin-left: 1.5em;
+            
+            @include md-layout-small {
+                margin-left: 1em;
+            }
+        
+        }
+    
+    }
+
+    .md-display-2,
+    .md-display-1,
+    .md-title {
+        margin: 0;
+        margin-left: 0.5em;
+        letter-spacing: .02em;
+    }
+
+    .md-display-1 {
+        padding: 0.75em 0;
+    }
+
+    .md-field {
+        margin-top: 0.12em;
+        margin-bottom: 0.875em;
+        padding-top: 1em;
+    }
+
+}

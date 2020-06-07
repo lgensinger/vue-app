@@ -1,0 +1,16 @@
+.md-card {
+    
+    > .md-card-area:not(:last-child) {
+        
+        &:after {
+            height: 0.1em;
+        }
+        
+        &.md-inset:after {
+            right: 1em;
+            left: 1em;
+        }
+        
+    }
+    
+}

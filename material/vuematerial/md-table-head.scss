@@ -1,0 +1,43 @@
+.md-table-head {
+    font-size: 1em;
+    line-height: 1;
+
+    &:last-child:not(:first-child) .md-table-head-label {
+        padding-right: 0;
+    }
+
+    &.md-sortable:first-of-type,
+    &.md-table-cell-selection + .md-sortable {
+
+        .md-table-sortable-icon {
+            right: 0;
+        }
+    
+    }
+
+    .md-icon {
+        $size: 1em;
+        width: $size;
+        height: $size;
+        font-size: $size;
+
+        &:not(.md-sortable-icon) {
+            margin: 0;
+        }
+    
+    }
+
+}
+
+.md-table-head-container {
+    height: auto;
+    padding: 0;
+}
+  
+.md-table-head-label {
+    height: auto;
+    line-height: 1;
+    padding-bottom: 0.75em;
+    padding-right: 0;
+    padding-left: 0;
+}

@@ -1,0 +1,21 @@
+.md-table-cell-selection {
+    width: auto;
+    
+    .md-checkbox {
+        margin: 0;
+      
+        .md-checkbox-container {
+            width: auto;
+            min-width: 0;
+            height: auto;
+        
+            &:after {
+                top: 0;
+                left: 0;
+            }
+      
+        }
+    
+    }
+  
+}

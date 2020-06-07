@@ -1,0 +1,38 @@
+$md-tooltip-height: 1.572em;
+$md-tooltip-height-mobile: 2em;
+  
+.md-tooltip {
+    height: $md-tooltip-height;
+    padding: 0 0.5em;
+    border-radius: 0.12em;
+    font-size: 0.715em;
+    line-height: $md-tooltip-height;
+    
+    @include md-layout-small {
+        height: $md-tooltip-height-mobile;
+        font-size: 0.875em;
+        line-height: $md-tooltip-height-mobile;
+    }
+    
+    &.md-tooltip-enter,
+    &.md-tooltip-leave-active {
+      
+        &.md-tooltip-top {
+            transform: translate3d(0, 0.25em, 0) scale(.95);
+        }
+      
+        &.md-tooltip-right {
+            transform: translate3d(-0.25em, 0, 0) scale(.95);
+        }
+        
+        &.md-tooltip-bottom {
+            transform: translate3d(0, -0.25em, 0) scale(.95);
+        }
+      
+        &.md-tooltip-left {
+            transform: translate3d(0.4em, 0, 0) scale(.95);
+        }
+    
+    }
+  
+}

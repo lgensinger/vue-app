@@ -1,0 +1,10 @@
+.md-table {
+    margin-top: 1em;
+    table-layout: fixed;
+    width: 100%;
+    
+    .md-table-fixed-header-active {
+        border-bottom-width: 0em;
+    }
+  
+}

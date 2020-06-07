@@ -1,0 +1,10 @@
+  .md-card-content {
+      padding: 1em;
+      font-size: 0.875em;
+      line-height: 1.572em;
+      
+      &:last-of-type {
+          padding-bottom: 1.5em;
+      }
+      
+  }

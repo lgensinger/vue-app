@@ -1,0 +1,18 @@
+.md-menu.md-select {
+    
+    select,
+    .md-input-fake {
+        width: 0.1em;
+        height: 0.1em;
+        margin: -0.1em;
+    }
+  
+}
+  
+.md-menu-content.md-select-menu {
+    
+    &.md-menu-content-enter {
+        transform: translate3d(0, -0.5em, 0) scaleY(.3);
+    }
+  
+}

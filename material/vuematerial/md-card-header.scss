@@ -1,0 +1,71 @@
+.md-card-header {
+    padding: 1em;
+    
+    &:first-child {
+        
+        > .md-title:first-child,
+        > .md-card-header-text > .md-title:first-child {
+            margin-top: 0.5em;
+        }
+    
+    }
+    
+    &:last-child {
+        margin-bottom: 0.5em;
+    }
+    
+    + .md-card-actions:not(:last-child) {
+        padding: 0 0.5em;
+    }
+    
+    > img,
+    .md-avatar {
+        margin-right: 1em;
+        
+        ~ .md-title {
+            font-size: 0.875em;
+        }
+        
+        ~ .md-title,
+        ~ .md-subhead {
+            line-height: 1.25em;
+        }
+    
+    }
+    
+    .md-button {
+        
+        &:last-child {
+            margin-right: -0.25em;
+        }
+        
+        + .md-button {
+            margin-left: 0.5em;
+        }
+    
+    }
+    
+    .md-card-media {
+        $size: 5.72em;
+        width: $size;
+        height: $size;
+        margin-left: 1em;
+        flex: 0 0 $size;
+        
+        &.md-medium {
+            $size: 7.5em;
+            width: $size;
+            height: $size;
+            flex: 0 0 $size;
+        }
+        
+        &.md-big {
+            $size: 11.43em;
+            width: $size;
+            height: $size;
+            flex: 0 0 $size;
+        }
+    
+    }
+  
+}

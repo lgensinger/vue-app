@@ -1,0 +1,139 @@
+/* ORDER IS DICTATED BY VUE-MATERIAL */
+/* IMPORT ORDER ENSURES PROPER CASCADING */
+
+/*************************************** GLOBAL ***************************************/
+
+body {
+    @extend .md-body-1;
+}
+
+@import "md-scrollbar";
+
+@import "typography";
+
+/*************************************** APP ***************************************/
+
+@import "md-app";
+@import "md-app-toolbar";
+@import "md-app-content";
+
+/*************************************** BADGE ***************************************/
+
+@import "md-badge-standalone";
+@import "md-badge";
+
+/*************************************** AUTOCOMPLETE ***************************************/
+
+@import "md-autocomplete";
+
+/*************************************** AVATAR ***************************************/
+
+@import "md-avatar";
+
+/*************************************** BOTTOM BAR ***************************************/
+
+@import "md-bottom-bar";
+
+/*************************************** BUTTON ***************************************/
+
+@import "md-button";
+
+/*************************************** CARD ***************************************/
+
+@import "md-card";
+@import "md-card-area";
+@import "md-card-header";
+@import "md-card-media";
+@import "md-card-media-actions";
+@import "md-card-content";
+@import "md-card-actions";
+
+/*************************************** CHECKBOX ***************************************/
+
+@import "md-checkbox";
+
+/*************************************** CHIP ***************************************/
+
+@import "md-icon";
+@import "md-list";
+@import "md-menu-content";
+@import "md-list-item-expand";
+@import "md-list-item";
+@import "md-select";
+@import "md-option-group";
+@import "md-field";
+
+@import "md-chips";
+@import "md-chip";
+
+/*************************************** DATEPICKER ***************************************/
+
+@import "md-dialog";
+@import "md-datepicker-dialog";
+
+/*************************************** DIALOG ***************************************/
+
+@import "md-dialog-title";
+@import "md-dialog-content";
+@import "md-dialog-actions";
+
+/*************************************** DIVIDER ***************************************/
+
+@import "md-divider";
+
+/*************************************** DRAWER ***************************************/
+
+@import "md-drawer";
+
+/*************************************** EMPTY STATE ***************************************/
+
+@import "md-empty-state";
+
+/*************************************** PROGRESS ***************************************/
+
+@import "md-progress-bar";
+
+/*************************************** RADIO ***************************************/
+
+@import "md-radio";
+
+/*************************************** RADIO ***************************************/
+
+@import "md-snackbar";
+
+/*************************************** SPEED DIAL ***************************************/
+
+@import "md-speed-dial";
+
+/*************************************** STEPPER ***************************************/
+
+@import "md-steppers";
+@import "md-step";
+
+/*************************************** SUBHEADER ***************************************/
+
+@import "md-subheader";
+
+/*************************************** SWITCH ***************************************/
+
+@import "md-switch";
+
+/*************************************** TABLE ***************************************/
+
+@import "md-table-head";
+@import "md-table-row";
+@import "md-table-cell-selection";
+@import "md-table";
+@import "md-toolbar";
+@import "md-table-toolbar";
+@import "md-table-empty-state";
+@import "md-table-cell";
+@import "md-table-pagination";
+
+/*************************************** TAB ***************************************/
+
+@import "md-tabs";
+
+/*************************************** TOOLTIP ***************************************/
+
+@import "md-tooltip";

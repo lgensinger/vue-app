@@ -1,0 +1,134 @@
+$md-stepper-icon-size: 2em;
+
+.md-steppers {
+
+    &.md-horizontal.md-alternative {
+
+        .md-stepper-header {
+            height: 6.5em;
+
+            .md-button-content {
+                padding-top: 1em;
+            }
+
+            .md-stepper-text {
+                height: 2em;
+            }
+
+            .md-stepper-icon,
+            .md-stepper-number {
+                margin: 0 0.5em 0.5em;
+
+                &:after,
+                &:before {
+                    height: 0.1em;
+                }
+
+                &:after {
+                    left: calc(100% + 0.5em);
+                }
+
+                &:before {
+                    right: 2em;
+                }
+            
+            }
+        
+        }
+    
+    }
+
+    &.md-vertical {
+        
+        .md-stepper-header {
+            height: 4em;
+
+            .md-ripple {
+                padding: 0 1.5em 0 1em;
+            }
+
+        }
+
+        .md-stepper-icon,
+        .md-stepper-number {
+            margin-right: 0.75em;
+        }
+
+        .md-stepper {
+            padding: 0;
+
+            &:after {
+                width: 0.1em;
+                top: 3.43em;
+                bottom: -0.5em;
+                left: 2.2em;
+            }
+        
+        }
+
+    }
+
+}
+  
+.md-stepper-header {
+    height: 5.143em;
+    margin: 0;
+    border-radius: 0;
+    .md-ripple {
+      padding: 0 1em;
+    }
+    .md-button-content {
+      padding: 0 0.5em;
+      &:after,
+      &:before {
+        height: 0.1em;
+      }
+      &:before {
+        width: 1em;
+        left: -1em;
+      }
+    }
+  }
+  
+.md-stepper-text {
+    line-height: 1.5em;
+}
+  
+.md-stepper-icon,
+.md-stepper-number {
+    margin-right: 0.5em;
+}
+  
+.md-stepper-number {
+    width: $md-stepper-icon-size;
+    height: $md-stepper-icon-size;
+    border-radius: $md-stepper-icon-size;
+    font-size: 1em;
+    line-height: $md-stepper-icon-size;
+}
+  
+.md-stepper-done {
+    width: 1.25em;
+    height: 1.25em;
+    transform: translateY(-0.1em);
+}
+
+.md-stepper-editable {
+    width: 0.875em;
+    height: 0.875em;
+    transform: translateY(-0.1em);
+}
+
+.md-stepper-error,
+.md-stepper-description {
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.md-stepper {
+    padding: 1em 1.5em;
+    @include md-layout-small {
+        padding: 0.5em 1em;
+    }
+  
+}

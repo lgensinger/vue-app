@@ -1,0 +1,51 @@
+.md-drawer {
+    width: 25em;
+    max-width: calc(100vw - 4em);
+
+    @include md-layout-xsmall {
+        width: 20em;
+    }
+
+    &.md-permanent-card {
+        
+        @include md-layout-small-and-up {    
+            margin: 0.5em;
+        }
+
+        @include md-layout-medium-and-up {
+            margin: 1em;
+        }
+
+        @include md-layout-large-and-up {
+            margin:1.5em;
+        }
+
+    }
+
+    &.md-persistent-mini {
+        transform: translate3D(0, 4.572em, 0);
+
+        &.md-left {
+            border-right-width: 0.1em;
+        }
+
+        &.md-right {
+            border-left-width: 0.1em;
+        }
+
+        &:not(.md-active) {
+            width: 4.375em !important;
+
+            .md-list-item-content {
+                padding: 0 1.438em;
+            }
+        
+        }
+
+    }
+
+    .md-list-item-container {
+        font-size: 0.875em;
+    }
+
+}

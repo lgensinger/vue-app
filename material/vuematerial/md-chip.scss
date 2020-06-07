@@ -1,0 +1,56 @@
+$md-chips-height: 2.5em;
+
+.md-chip {
+    height: $md-chips-height;
+    padding: 0 1em;
+    border-radius: $md-chips-height;
+    font-size: 0.93em;
+    line-height: $md-chips-height;
+    
+    &.md-clickable {
+        
+        > .md-ripple {
+            padding: 0 0.75em;
+        }
+    
+    }
+    
+    &.md-deletable {
+        padding-right: 2em;
+        
+        &.md-clickable {
+            
+            > .md-ripple {
+                padding-right: 2em;
+            }
+        
+        }
+    
+    }
+    
+    + .md-chip {
+        margin-left: 0.25em;
+    }
+    
+    .md-button.md-input-action {
+        width: 1em;
+        min-width: 1em;
+        height: 1em;
+        right: 0.48em;
+        font-size: 1em;
+        border-radius: 50%;
+        
+        .md-button-content {
+            height: 1em;
+        }
+        
+        .md-icon {
+            width: 1em;
+            min-width: 1em;
+            height: 1em;
+            font-size: 1em !important;
+        }
+    
+    }
+
+}

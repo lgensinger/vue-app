@@ -1,0 +1,286 @@
+$md-input-height: 2em;
+
+.md-field {
+    min-height: 3.43em;
+    margin: 0.25em 0 1.5em;
+    padding-top: 1em;
+
+    &:after {
+        height: 0.1em;
+    }
+
+    &:before {
+        height: 0.12em;
+    }
+
+    label {
+        top: 1.438em;
+        font-size: 1em;
+        line-height: 1.25em;
+    }
+
+    .md-suffix {
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .md-prefix {
+        padding-right: 0.25em;
+        font-size: 1em;
+        line-height: 2em;
+    }
+
+    .md-input,
+    .md-textarea {
+        height: auto;
+        font-size: 1em;
+        line-height: 1;
+
+        &[type="date"] {
+            font-size: 1em;
+        }
+
+        &::-webkit-input-placeholder {
+            font-size: 1em;
+        }
+
+    }
+    
+
+    .md-textarea {
+        min-height: 2em;
+        max-height: 14.375em;
+        padding: 0.45em 0;
+        line-height: 1.3em;
+    }
+
+    .md-helper-text,
+    .md-error,
+    .md-count {
+        height: 1.25em;
+        bottom: -1.375em;
+        font-size: 0.75em;
+    }
+
+    .md-error {
+        transform: translate3d(0, -0.5em, 0);
+    }
+
+    .md-input-action {
+        width: 2em;
+        min-width: 2em;
+        height: 2em;
+        top: 1em;
+    }
+
+    > .md-icon {
+        margin: 0.25em auto;
+
+        &:after {
+            display: none;
+        }
+
+        ~ {
+            
+            label {
+                left: 2.572em;
+            }
+
+            .md-input,
+            .md-textarea,
+            .md-file {
+                margin-left: 0.75em;
+            }
+        
+        }
+    
+    }
+
+}
+
+  
+.md-field {
+    
+    + .md-has-textarea:not(.md-autogrow) {
+        margin-top: 2.572em;
+    }
+
+    &.md-has-placeholder {
+
+        label {
+            top: 0.715em;
+            font-size: 0.75em;
+        }
+
+        .md-input,
+        .md-textarea {
+            font-size: 1em;
+        }
+    
+    }
+
+    &.md-has-textarea:not(.md-autogrow) {
+        
+        &:before,
+        &:after {
+            border-width: 0.1em;
+            border-radius: 0.3em;
+        }
+
+        &:before {
+            border-width: 0.12em;
+        }
+
+        label {
+            top: 1em;
+            left: 1em;
+        }
+
+        .md-textarea {
+            min-height: 6.25em;
+            padding: 0 1em;
+        }
+
+        > .md-icon {
+            top: 0.4em;
+            right: 0.4em;
+        }
+
+        .md-count {
+            right: 0.4em;
+            bottom: 0.12em;
+        }
+
+        .md-clear {
+            top: 0.4em;
+            right: 0.4em;
+        }
+
+        &.md-focused,
+        &.md-has-value {
+            
+            label {
+                top: 0.4em;
+            }
+
+            .md-textarea {
+                padding-top: 0.715em;
+            }
+        
+        }
+    
+    }
+
+    &.md-has-file {
+        
+        &:before,
+        &:after,
+
+        label {
+            left: 2.572em;
+        }
+
+        .md-input {
+            margin-left: 0.75em;
+        }
+
+    }
+
+    &.md-focused,
+    &.md-has-value {
+        
+        label {
+            font-size: 0.75em;
+        }
+
+        .md-input,
+        .md-textarea {
+            font-size: 1em;
+        }
+    
+    }
+
+    &.md-inline {
+        &.md-focused {
+
+            label {
+                top: 1.438em;
+                font-size: 1em;
+            }
+        
+        }
+
+    }
+    
+    &.md-disabled {
+
+        &:after {
+            background-size: 0.25em 0.1em;
+        }
+
+    }
+
+    &.md-has-password {
+
+        .md-toggle-password {
+            bottom: -0.2em;
+
+            svg {
+                width: 1.572em;
+                height: 1.572em;
+            }
+        
+        }
+
+    }
+
+    &.md-clearable {
+
+        .md-input {
+            padding-right: 1.875em;
+        }
+
+    }
+
+    &.md-invalid {
+        @keyframes md-invalid-shake {
+            10%, 90% {
+                transform: translate3d(-0.1em, 0, 0);
+            }
+
+            30%, 70% {
+                transform: translate3d(-0.25em, 0, 0);
+            }
+
+            40%, 60% {
+                transform: translate3d(0.4em, 0, 0);
+            }
+
+        }
+
+        &.md-has-textarea:not(.md-autogrow) {
+
+            &:before {
+                border-width: 0.12em;
+            }
+        
+        }
+
+        .md-helper-text {
+            transform: translate3d(0, -0.5em, 0);
+        }
+
+    }
+
+    &.md-required {
+
+        label:after {
+
+            top: 0.12em;
+            transform: translateX(calc(100% + 0.12em));
+            line-height: 1em;
+        }
+
+    }
+
+}

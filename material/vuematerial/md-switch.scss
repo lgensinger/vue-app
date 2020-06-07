@@ -1,0 +1,57 @@
+$md-switch-width: 2.125em;
+$md-switch-height: 0.875em;
+$md-switch-size: 1.25em;
+$md-switch-touch-size: 3.43em;
+  
+.md-switch {
+    margin: 1em 1em 1em 0;
+
+    .md-switch-container {
+        width: $md-switch-width;
+        min-width: $md-switch-width;
+        height: $md-switch-height;
+        margin: 0.3em 0;
+        border-radius: $md-switch-height;
+    }
+
+    .md-switch-thumb {
+        width: $md-switch-size;
+        height: $md-switch-size;
+
+        &:before {
+            width: $md-switch-touch-size;
+            height: $md-switch-touch-size;
+        }
+        
+        .md-ripple {
+            width: $md-switch-touch-size !important;
+            height: $md-switch-touch-size !important;
+        }
+
+    }
+
+    .md-switch-label {
+        height: $md-switch-size;
+        padding-left: 1em;
+        line-height: $md-switch-size;
+    }
+
+}
+  
+.md-switch.md-checked {
+    
+    .md-switch-thumb {
+        transform: translate3d(0.938em, 0, 0);
+    }
+  
+}
+  
+.md-switch.md-required {
+    
+    label:after {
+        top: 0.12em;
+        transform: translateX(calc(100% + 0.12em));
+        line-height: 1em;
+    }
+  
+}

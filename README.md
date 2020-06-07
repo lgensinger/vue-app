@@ -1,2 +1,4 @@
-# vue-app
-Vue.js web application scaffold
+# Vue.js Web Application
+
+Vue.js web application scaffold.
+

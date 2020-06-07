@@ -1,0 +1,19 @@
+.md-card-media-actions {
+    padding: 1em;
+    
+    .md-card-media {
+        $size: 15em;
+        max-width: $size;
+        max-height: $size;
+    }
+
+    .md-card-actions {
+        margin-left: 1em;
+        
+        .md-button + .md-button {
+            margin: 0.5em 0 0;
+        }
+    
+    }
+    
+}

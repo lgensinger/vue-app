@@ -1,0 +1,84 @@
+$md-button-min-width: 6.286em;
+$md-button-height: 2.572em;
+$md-button-radius: 0.12em;
+$md-button-font-size: 0.875em;
+$md-button-dense-height: 2em;
+$md-button-icon-size: 2.5em;
+$md-button-fab-size: 4em;
+$md-button-fab-size-mini: $md-button-icon-size;
+
+.md-button {
+    min-width: $md-button-min-width;
+    height: $md-button-height;
+    margin: 0.4em 0.5em;
+    border-radius: $md-button-radius;
+    font-size: $md-button-font-size;
+    
+    &.md-dense {
+        height: $md-button-dense-height;
+        font-size: 0.93em;
+    }
+    
+    .md-ripple {
+        padding: 0 0.5em;
+    }
+
+}
+
+.md-button-spaced .md-ripple {
+    padding: 0 1em;
+}
+
+.md-icon-button {
+    width: $md-button-icon-size;
+    min-width: $md-button-icon-size;
+    height: $md-button-icon-size;
+    margin: 0 0.4em;
+    
+    &.md-dense {
+        width: $md-button-dense-height;
+        min-width: $md-button-dense-height;
+        height: $md-button-dense-height;
+    }
+    
+}
+
+.md-fab {
+    width: $md-button-fab-size;
+    height: $md-button-fab-size;
+    
+    &.md-mini,
+    &.md-dense {
+        width: $md-button-fab-size-mini;
+        height: $md-button-fab-size-mini;
+    }
+    
+    &.md-fab-top-right,
+    &.md-fab-top-left {
+        top: 1.5em;
+    }
+    
+    &.md-fab-bottom-right,
+    &.md-fab-bottom-left {
+        bottom: 1.5em;
+    }
+    
+    &.md-fab-top-center {
+        top: 1.5em;
+    }
+    
+    &.md-fab-bottom-center {
+        bottom: 1.5em;
+    }
+    
+    &.md-fab-top-right,
+    &.md-fab-bottom-right {
+        right: 1.5em;
+    }
+
+    &.md-fab-top-left,
+    &.md-fab-bottom-left {
+        left: 1.5em;
+    }
+    
+}

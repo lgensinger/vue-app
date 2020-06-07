@@ -1,0 +1,24 @@
+.md-chips.md-field {
+    padding-top: 0.75em;
+    
+    &.md-has-value {
+        label {
+            top: -0.4em;
+        }
+    
+    }
+
+    .md-chip {
+        margin-bottom: 0.25em;
+        
+        &:last-of-type {
+            margin-right: 0.5em;
+        }
+    
+    }
+
+    .md-input {
+        min-width: 9.143em;
+    }
+    
+}
